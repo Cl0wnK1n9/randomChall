@@ -5,11 +5,12 @@ Tại mình lười chụp ảnh nên =))) mọi người cố gắng làm trư�
 
 Xem trong source HTML ta nhận ra đoạn javascript này sẽ hiển thị nội dung của input vào thẻ có id là `demo`
 ```<script type="text/javascript">var x = 'sudo';document.getElementById("demo").innerHTML = x;</script>```
-Và input của ta khi được sẽ dùng làm giá trị cho phép gán trong thẻ `script`. Ý tưởng ban đầu của mình sẽ bắt đầu từ việc đơn giản nhất, đó là break khỏi phép gán và gọi alert(1).Payload cho việc này sẽ là `'; alert(1);var y='`. Tuy nhiên thì đời không như mơ =((( filter. Sau một hồi mò mẫm thì mình nhận ra `;` bị cấm, bạn không thể gọi hàm kiểu như alert(1) hay eval('1+1') tuy nhiên những thứ như kiểu `[]()`  thì vẫn sẽ hoạt động bình thường. Vậy có 2 vấn đề: ```1 Làm sao để thực thi hàm mà không cần tách câu lệnh có sẵn? 
+Và input của ta khi được sẽ dùng làm giá trị cho phép gán trong thẻ `script`. Ý tưởng ban đầu của mình sẽ bắt đầu từ việc đơn giản nhất, đó là break khỏi phép gán và gọi alert(1).Payload cho việc này sẽ là `'; alert(1);var y='`. Tuy nhiên thì đời không như mơ =((( filter. Sau một hồi mò mẫm thì mình nhận ra `;` bị cấm, bạn không thể gọi hàm kiểu như alert(1) hay eval('1+1') tuy nhiên những thứ như kiểu `[]()`  thì vẫn sẽ hoạt động bình thường. Vậy có 2 vấn đề: 
+```1 Làm sao để thực thi hàm mà không cần tách câu lệnh có sẵn? 
 2 Làm sao để gọi hàm alert ?```
 
 # 1 Làm sao để thực thi hàm mà không cần tách câu lệnh có sẵn?
-```var a = 'a' * alert(1) * 'a';```
+`var a = 'a' * alert(1) * 'a';`
 Javascript cho phép điều này xảy ra có lẽ là do hàm alert thực chất vẫn có giá trị trả về. Không tin thử mà xem 
 
 # 2 Làm sao để gọi hàm alert? 
