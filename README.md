@@ -1,4 +1,4 @@
-# Rusty Joomla AND Rootme challenge
+# Rusty Joomla AND Rootme challenge https://www.root-me.org/en/Challenges/Web-Server/PHP-Unserialize-overflow?action_solution=voir&debut_affiche_solutions=1#pagination_affiche_solutions
 
 Lại là câu chuyện CTF và realworld có giống nhau hay không. Đối với bản thân mình thì 2 cái chẳng khác gì nhau cả có khi realworld còn dễ hơn CTF rất nhiều, lý do thì rõ ràng rồi người tạo ra ứng dụng là lập trình viên - những người không có chuyên môn về ATTT cũng như khả năng lập trình an toàn, trong khi đó đề CTF được ra bởi những người làm ATTT họ hiểu rõ lỗi và nguyên nhân gây ra lỗi đó. Bằng chứng à? đọc thêm phía dưới để thấy nhé lewlew.
 
